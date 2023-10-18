@@ -27,6 +27,7 @@ namespace WPF_Demo1
             listOfPersons.Add(new Person { FirstName = "Tarek", LastName = "Gustavson" });
             listOfPersons.Add(new Person { FirstName = "Anton", LastName = "NotHere" });
             listOfPersons.Add(new Person { FirstName = "Mosa", LastName = "Eld" });
+            //this.Background = new SolidColorBrush(Colors.Red);
 
             ComboBox.ItemsSource = listOfPersons;
         }
@@ -34,6 +35,8 @@ namespace WPF_Demo1
         private void SubmitButton_Click(object sender, RoutedEventArgs e)
         {
             MessageBox.Show($"Hello {FirstNameText.Text} to our program");
+            Win2 window = new Win2();
+            window.Show();
         }
         public class Person
         {
